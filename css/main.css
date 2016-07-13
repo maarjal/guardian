@@ -51,6 +51,110 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.wrap {
+  height: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#headlines {
+  height: 70%; }
+
+.section-info {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: purple; }
+
+.section-content {
+  width: 80%;
+  height: 100%;
+  float: left; }
+
+.row1 {
+  width: 100%;
+  height: 50%; }
+  .row1 .row1col1 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    margin-right: 0;
+    background-color: red; }
+    .row1 .row1col1:last-child {
+      margin-right: 0; }
+  .row1 .row1col2 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0;
+    background-color: orange; }
+    .row1 .row1col2:last-child {
+      margin-right: 0; }
+
+.row2 {
+  width: 100%;
+  height: 50%; }
+  .row2 .row2col1 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0;
+    background-color: yellow; }
+    .row2 .row2col1:last-child {
+      margin-right: 0; }
+  .row2 .row2col2 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0;
+    background-color: pink; }
+    .row2 .row2col2:last-child {
+      margin-right: 0; }
+  .row2 .row2col3 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0; }
+    .row2 .row2col3:last-child {
+      margin-right: 0; }
+    .row2 .row2col3 .subrow1 {
+      height: 33%;
+      background-color: brown; }
+    .row2 .row2col3 .subrow2 {
+      height: 33%;
+      background-color: grey; }
+    .row2 .row2col3 .subrow3 {
+      height: 33%;
+      background-color: black; }
+  .row2 .row2col4 {
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0; }
+    .row2 .row2col4:last-child {
+      margin-right: 0; }
+    .row2 .row2col4 .subrow1 {
+      height: 33%;
+      background-color: gold; }
+    .row2 .row2col4 .subrow2 {
+      height: 33%;
+      background-color: tomato; }
+    .row2 .row2col4 .subrow3 {
+      height: 33%;
+      background-color: silver; }
+
 *,
 *::before,
 *::after {

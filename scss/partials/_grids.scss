@@ -1,0 +1,85 @@
+.wrap {
+  height: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#headlines {
+  height: 70%;
+}
+
+.section-info {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: purple;
+}
+
+.section-content {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+.row1 {
+  width: 100%;
+  height: 50%;
+  & .row1col1 {
+    height: 100%;
+    @include col-gutter(9, 0);
+    background-color: red;
+  }
+  & .row1col2 {
+    height: 100%;
+    @include col-gutter(3, 0);
+    background-color: orange;
+  }
+}
+
+.row2 {
+  width: 100%;
+  height: 50%;
+  & .row2col1 {
+    height: 100%;
+    @include col-gutter(3,0);
+    background-color: yellow;
+  }
+  & .row2col2 {
+    height: 100%;
+    @include col-gutter(3,0);
+    background-color: pink;
+  }
+  & .row2col3 {
+    height: 100%;
+    @include col-gutter(3,0);
+    & .subrow1 {
+      height: 33%;
+      background-color: brown;
+    }
+    & .subrow2 {
+      height: 33%;
+      background-color: grey;
+    }
+    & .subrow3 {
+      height: 33%;
+      background-color: black;
+    }
+  }
+  & .row2col4 {
+    height: 100%;
+    @include col-gutter(3,0);
+    & .subrow1 {
+      height: 33%;
+      background-color: gold;
+    }
+    & .subrow2 {
+      height: 33%;
+      background-color: tomato;
+    }
+    & .subrow3 {
+      height: 33%;
+      background-color: silver;
+    }
+  }
+}
