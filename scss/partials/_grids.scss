@@ -9,11 +9,19 @@
   height: 70%;
 }
 
+// Aside
+aside {
+  background-color: white;
+}
+
+.headlines-aside {
+  position: relative;
+}
+
 .section-info {
   float: left;
   width: 20%;
   height: 100%;
-  background-color: purple;
 }
 
 .section-content {
@@ -33,6 +41,16 @@
     background-color: red;
     &:after {
     @include vertical-hr(-1.8%);
+    }
+    & .col-main-news {
+      @include col-gutter(4);
+      height: 15em;
+      background-color: black;
+    }
+    & .col-main-pic {
+      @include col-gutter(8, 0);
+      height: 15em;
+      background-color: green;
     }
   }
   & .row1col2 {

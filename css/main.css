@@ -51,6 +51,96 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: white; }
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: white; }
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+  background-color: white; }
+
+button {
+  border: 1px solid #d9d9d9;
+  border-color: #d9d9d9 #c9c9c9 #bdbdbd;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e6e6e6);
+  background-image: linear-gradient(white, #e6e6e6);
+  padding: 7px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px white;
+  background-clip: padding-box;
+  border: 1px solid #d9d9d9;
+  border-color: #d9d9d9 #c9c9c9 #bdbdbd;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e9e3e2);
+  background-image: linear-gradient(white, #e9e3e2);
+  padding: 7px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px white;
+  background-clip: padding-box;
+  background: white;
+  border: 1px solid #4bc6df;
+  color: #00456e;
+  margin: 2%; }
+  button:hover:not(:disabled) {
+    background-color: #f4f4f4;
+    background-image: -webkit-linear-gradient(#f4f4f4, #d7d7d7);
+    background-image: linear-gradient(#f4f4f4, #d7d7d7);
+    background-clip: padding-box;
+    border: 1px solid #c9c9c9;
+    border-color: #c9c9c9 #bababa #adadad;
+    box-shadow: inset 0 1px 0 0 white;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #c7c7c7; }
+  button:active:not(:disabled), button:focus:not(:disabled) {
+    background: #e6e6e6;
+    border: 1px solid #b3b3b3;
+    border-bottom: 1px solid #b0b0b0;
+    box-shadow: inset 0 0 6px 3px #c8c8c8;
+    text-shadow: 0 -1px 1px #c8c8c8; }
+  button:hover:not(:disabled) {
+    background-color: #f4f4f4;
+    background-image: -webkit-linear-gradient(#f4f4f4, #d7d7d7);
+    background-image: linear-gradient(#f4f4f4, #d7d7d7);
+    background-clip: padding-box;
+    border: 1px solid #c9c9c9;
+    border-color: #c9c9c9 #bababa #b8a5a2;
+    box-shadow: inset 0 1px 0 0 white;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #c7c7c7; }
+  button:active:not(:disabled), button:focus:not(:disabled) {
+    background: #e6e6e6;
+    border: 1px solid #b3b3b3;
+    border-bottom: 1px solid #b5adab;
+    box-shadow: inset 0 0 6px 3px #c9c7c7;
+    text-shadow: 0 -1px 1px #c8c8c8; }
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+.headlines-buttons {
+  position: absolute;
+  bottom: 1%;
+  left: 3%; }
+
 .wrap {
   height: 100%;
   max-width: 1320px;
@@ -60,11 +150,16 @@ table {
 #headlines {
   height: 70%; }
 
+aside {
+  background-color: white; }
+
+.headlines-aside {
+  position: relative; }
+
 .section-info {
   float: left;
   width: 20%;
-  height: 100%;
-  background-color: purple; }
+  height: 100%; }
 
 .section-content {
   width: 80%;
@@ -92,6 +187,25 @@ table {
       top: 0;
       right: -1.8%;
       border: 0.6px solid #dfdfdf; }
+    .row1 .row1col1 .col-main-news {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      height: 15em;
+      background-color: black; }
+      .row1 .row1col1 .col-main-news:last-child {
+        margin-right: 0; }
+    .row1 .row1col1 .col-main-pic {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0;
+      height: 15em;
+      background-color: green; }
+      .row1 .row1col1 .col-main-pic:last-child {
+        margin-right: 0; }
   .row1 .row1col2 {
     height: 100%;
     float: left;
@@ -197,7 +311,8 @@ table {
 
 body {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #f5f5f5; }
 
 #nav-background {
   background-color: #005689; }
@@ -250,5 +365,16 @@ nav {
 h1 {
   font-size: 5em;
   text-align: center; }
+
+#headlines h2 {
+  color: #00456e;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 90%;
+  padding-left: 3%;
+  border-top: 1px solid #4bc6df;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=main.css.map */

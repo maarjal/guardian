@@ -28,3 +28,9 @@
     background-color: black;
   }
 }
+
+@mixin font-stack ($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
