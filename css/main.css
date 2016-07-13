@@ -62,25 +62,52 @@ body {
   height: 100vh;
   width: 100vw; }
 
+#nav-background {
+  background-color: #005689; }
+
 nav {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1%;
   position: relative;
   height: 18vh;
-  border: 2px solid blue; }
+  background-color: #005689; }
+  nav a {
+    color: white;
+    text-decoration: none; }
 
 .logo {
   position: absolute;
-  top: 22%;
-  left: 65%; }
+  top: 29%;
+  right: 3%; }
 
-.nav-links-right, .logo {
+.nav-upper-right {
   float: right; }
 
+.nav-upper-right {
+  width: 10em;
+  text-align: right; }
+
+.nav-upper-right a:last-child {
+  padding-left: 10%; }
+
 .nav-upper {
-  height: 75%; }
+  height: 80%; }
 
 .nav-lower {
-  height: 25%;
-  padding-top: 1%; }
+  background-color: #00456e;
+  height: 20%;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 2.1%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .nav-lower a {
+    padding-left: 1%; }
+
+.nav-link-icon {
+  padding: 0 1%; }
 
 /*# sourceMappingURL=main.css.map */
