@@ -23,12 +23,17 @@
 }
 
 .row1 {
+  margin-bottom: 2.35765%;
   width: 100%;
   height: 50%;
   & .row1col1 {
+    position: relative;
     height: 100%;
-    @include col-gutter(9, 0);
+    @include col-gutter(9);
     background-color: red;
+    &:after {
+    @include vertical-hr(-1.8%);
+    }
   }
   & .row1col2 {
     height: 100%;
@@ -39,47 +44,117 @@
 
 .row2 {
   width: 100%;
-  height: 50%;
+  height: 47.2%;
   & .row2col1 {
+    position: relative;
     height: 100%;
-    @include col-gutter(3,0);
+    @include col-gutter(3);
     background-color: yellow;
+    &:after {
+    @include vertical-hr(-5.8%);
+    }
   }
   & .row2col2 {
+    position: relative;
     height: 100%;
-    @include col-gutter(3,0);
+    @include col-gutter(3);
     background-color: pink;
+    &:after {
+    @include vertical-hr(-5.8%);
+    }
   }
   & .row2col3 {
+    position: relative;
     height: 100%;
-    @include col-gutter(3,0);
-    & .subrow1 {
-      height: 33%;
-      background-color: brown;
+    @include col-gutter(3);
+    &:after {
+    @include vertical-hr(-5.8%);
     }
-    & .subrow2 {
-      height: 33%;
-      background-color: grey;
-    }
-    & .subrow3 {
-      height: 33%;
-      background-color: black;
-    }
+    @include subrows();
   }
   & .row2col4 {
     height: 100%;
     @include col-gutter(3,0);
-    & .subrow1 {
-      height: 33%;
-      background-color: gold;
-    }
-    & .subrow2 {
-      height: 33%;
-      background-color: tomato;
-    }
-    & .subrow3 {
-      height: 33%;
-      background-color: silver;
-    }
+    @include subrows();
   }
 }
+
+
+
+
+
+//content grid template
+
+// #Content section id goes here {
+//   height: 70%;
+// }
+//
+// .section-info {
+//   float: left;
+//   width: 20%;
+//   height: 100%;
+//   background-color: purple;
+// }
+//
+// .section-content {
+//   width: 80%;
+//   height: 100%;
+//   float: left;
+// }
+//
+// .row1 {
+//   margin-bottom: 2.35765%;
+//   width: 100%;
+//   height: 50%;
+//   & .row1col1 {
+//     position: relative;
+//     height: 100%;
+//     @include col-gutter(9);
+//     background-color: red;
+//     &:after {
+//     @include vertical-hr(-1.8%);
+//     }
+//   }
+//   & .row1col2 {
+//     height: 100%;
+//     @include col-gutter(3, 0);
+//     background-color: orange;
+//   }
+// }
+//
+// .row2 {
+//   width: 100%;
+//   height: 47.2%;
+//   & .row2col1 {
+//     position: relative;
+//     height: 100%;
+//     @include col-gutter(3);
+//     background-color: yellow;
+//     &:after {
+//     @include vertical-hr(-5.8%);
+//     }
+//   }
+//   & .row2col2 {
+//     position: relative;
+//     height: 100%;
+//     @include col-gutter(3);
+//     background-color: pink;
+//     &:after {
+//     @include vertical-hr(-5.8%);
+//     }
+//   }
+//   & .row2col3 {
+//     position: relative;
+//     height: 100%;
+//     @include col-gutter(3);
+//     &:after {
+//     @include vertical-hr(-5.8%);
+//     }
+//     @include subrows();
+//   }
+//   & .row2col4 {
+//     height: 100%;
+//     @include col-gutter(3,0);
+//     @include subrows();
+//   }
+// }

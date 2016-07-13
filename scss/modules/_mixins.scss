@@ -1,4 +1,30 @@
-@mixin col-gutter( $cols, $gutter ){
+@mixin col-gutter( $cols, $gutter:null ){
     @include span-columns($cols);
     margin-right: $gutter;
+}
+
+@mixin vertical-hr ($right:null) {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: $right;
+  border: 0.6px solid #dfdfdf;
+}
+
+@mixin subrows {
+  & .subrow1 {
+    margin-bottom: 3.5%;
+    height: 31%;
+    background-color: brown;
+  }
+  & .subrow2 {
+    margin-bottom: 3.5%;
+    height: 31%;
+    background-color: grey;
+  }
+  & .subrow3 {
+    height: 31%;
+    background-color: black;
+  }
 }

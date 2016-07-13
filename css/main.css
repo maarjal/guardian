@@ -72,18 +72,26 @@ table {
   float: left; }
 
 .row1 {
+  margin-bottom: 2.35765%;
   width: 100%;
   height: 50%; }
   .row1 .row1col1 {
+    position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
-    margin-right: 0;
     background-color: red; }
     .row1 .row1col1:last-child {
       margin-right: 0; }
+    .row1 .row1col1:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -1.8%;
+      border: 0.6px solid #dfdfdf; }
   .row1 .row1col2 {
     height: 100%;
     float: left;
@@ -97,44 +105,67 @@ table {
 
 .row2 {
   width: 100%;
-  height: 50%; }
+  height: 47.2%; }
   .row2 .row2col1 {
+    position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    margin-right: 0;
     background-color: yellow; }
     .row2 .row2col1:last-child {
       margin-right: 0; }
+    .row2 .row2col1:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -5.8%;
+      border: 0.6px solid #dfdfdf; }
   .row2 .row2col2 {
+    position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    margin-right: 0;
     background-color: pink; }
     .row2 .row2col2:last-child {
       margin-right: 0; }
+    .row2 .row2col2:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -5.8%;
+      border: 0.6px solid #dfdfdf; }
   .row2 .row2col3 {
+    position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-right: 0; }
+    width: 23.23176%; }
     .row2 .row2col3:last-child {
       margin-right: 0; }
+    .row2 .row2col3:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -5.8%;
+      border: 0.6px solid #dfdfdf; }
     .row2 .row2col3 .subrow1 {
-      height: 33%;
+      margin-bottom: 3.5%;
+      height: 31%;
       background-color: brown; }
     .row2 .row2col3 .subrow2 {
-      height: 33%;
+      margin-bottom: 3.5%;
+      height: 31%;
       background-color: grey; }
     .row2 .row2col3 .subrow3 {
-      height: 33%;
+      height: 31%;
       background-color: black; }
   .row2 .row2col4 {
     height: 100%;
@@ -146,14 +177,16 @@ table {
     .row2 .row2col4:last-child {
       margin-right: 0; }
     .row2 .row2col4 .subrow1 {
-      height: 33%;
-      background-color: gold; }
+      margin-bottom: 3.5%;
+      height: 31%;
+      background-color: brown; }
     .row2 .row2col4 .subrow2 {
-      height: 33%;
-      background-color: tomato; }
+      margin-bottom: 3.5%;
+      height: 31%;
+      background-color: grey; }
     .row2 .row2col4 .subrow3 {
-      height: 33%;
-      background-color: silver; }
+      height: 31%;
+      background-color: black; }
 
 *,
 *::before,
