@@ -1,6 +1,7 @@
 @mixin col-gutter( $cols, $gutter:null ){
     @include span-columns($cols);
     margin-right: $gutter;
+    height: 100%;
 }
 
 @mixin vertical-hr ($right:null) {
@@ -16,16 +17,13 @@
   & .subrow1 {
     margin-bottom: 3.5%;
     height: 31%;
-    background: $news-background;
   }
   & .subrow2 {
     margin-bottom: 3.5%;
     height: 31%;
-    background: $news-background;
   }
   & .subrow3 {
     height: 31%;
-    background: $news-background;
   }
 }
 
@@ -35,8 +33,34 @@
   font-weight: $weight;
 }
 
-// media queries
+@mixin red-card {
+  background-color: $main-news-background;
+  border-top: 1px solid lighten($main-news-background, 25%);
+  color: white;
+  .header-colour-span {
+    color: lighten($main-news-background, 25%);
+  }
+}
 
-$medium-screen: 1140px;
-$small-screen: 980px;
-$xsmall-screen: 740px;
+@mixin default-card-color {
+  border-top: 1px solid $border-color;
+  background: $news-background;
+  color: #4d4d4d;
+  .header-colour-span {
+    color: $guardian-color-dark;
+  }
+}
+
+@mixin live-card-color {
+  background: $live-news-background;
+  color: white;
+  .header-colour-span {
+    color: lighten($live-news-background, 30%);
+  }
+}
+
+@mixin aside ($padding-left:null) {
+  padding-left: $padding-left;
+  margin-left: auto;
+  margin-right: auto;
+}
