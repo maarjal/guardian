@@ -3,28 +3,24 @@
 
 #{$all-buttons} {
   background-color: white;
+  border: 1px solid $border-color;
+  color: $guardian-color-dark;
+  font-weight: bold;
+  border-radius: 25px;
+  display: block;
+  margin-bottom: 3%;
+  height: 1.5rem;
 }
 
 #{$all-buttons-focus},
 #{$all-buttons-hover} {
-  background-color: white;
+  border: 1px solid darkgrey;
+  color: black;
+  outline: none;
+
 }
 
 #{$all-buttons-active} {
-  background-color: white;
-}
-
-button {
-  @include button(pill, white);
-  background: white;
-  border: 1px solid $border-color;
-  color: $guardian-color-dark;
-  // &:focus, &:hover {
-  //   border: 1px solid grey;
-  //   color: yellow;
-  //
-  // }
-  margin: 2%;
 }
 
 .headlines-buttons {

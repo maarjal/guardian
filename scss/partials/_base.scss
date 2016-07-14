@@ -79,7 +79,7 @@ h1 {
   text-align: center;
 }
 
-#headlines h2 {
+aside h2 {
   @include font-stack($guardian-color-dark, 1.5em, bold);
   width: 90%;
   padding-left: 3%;

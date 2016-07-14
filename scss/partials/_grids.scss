@@ -13,46 +13,64 @@
 // Aside
 aside {
   background-color: white;
-}
-
-.headlines-aside {
   position: relative;
-}
-
-.section-info {
   float: left;
   width: 20%;
   height: 100%;
-}
+  @media screen and (max-width: $medium-screen) {
+      float: none;
+      width: 100%;
+      height: 20%;
+    }
+  }
+
+// .headlines-aside {
+//   position: relative;
+// }
+//
+// .section-info {
+//   float: left;
+//   width: 20%;
+//   height: 100%;
+//   @include medium-screen();
+// }
 
 .section-content {
   background: white;
+  padding-bottom: 3%;
   width: 80%;
   height: 100%;
   float: left;
   & img {
     width: 100%;
   }
-  & h3, & p, & h4 {
+  & h3, & p, & h4, &h5 {
     padding-left: 2%;
     padding-top: 1%;
   }
   & h3 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   & h4 {
-    font-size: 1.3em;
+    font-size: 1.4rem;
   }
+  & h5 {
+    font-size: 1.1rem;
+  }
+}
+
+.row1col1, .row1col2, .row2col1, .row2col2, .subrow1, .subrow2, .subrow3 {
+  border-top: 1px solid $border-color;
 }
 
 .row1 {
   margin-bottom: 2.35765%;
-  width: 100%;
+  width: 90%;
   height: 50%;
   & .row1col1 {
     color: white;
     background: $main-news-background;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid lighten($main-news-background, 25%);
     position: relative;
     height: 100%;
     @include col-gutter(9);
@@ -76,7 +94,7 @@ aside {
 }
 
 .row2 {
-  width: 100%;
+  width: 90%;
   height: 47.2%;
   & .row2col1 {
     background: $news-background;
