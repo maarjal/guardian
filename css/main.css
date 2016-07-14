@@ -148,6 +148,7 @@ button {
   margin-right: auto; }
 
 #headlines {
+  margin-top: 1rem;
   height: 70%; }
 
 aside {
@@ -162,22 +163,34 @@ aside {
   height: 100%; }
 
 .section-content {
+  background: white;
   width: 80%;
   height: 100%;
   float: left; }
+  .section-content img {
+    width: 100%; }
+  .section-content h3, .section-content p, .section-content h4 {
+    padding-left: 2%;
+    padding-top: 1%; }
+  .section-content h3 {
+    font-size: 2em; }
+  .section-content h4 {
+    font-size: 1.3em; }
 
 .row1 {
   margin-bottom: 2.35765%;
   width: 100%;
   height: 50%; }
   .row1 .row1col1 {
+    color: white;
+    background: #951c55;
+    border-top: 1px solid #4bc6df;
     position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
-    background-color: red; }
+    width: 74.41059%; }
     .row1 .row1col1:last-child {
       margin-right: 0; }
     .row1 .row1col1:after {
@@ -192,8 +205,7 @@ aside {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      height: 15em;
-      background-color: black; }
+      height: 26.5rem; }
       .row1 .row1col1 .col-main-news:last-child {
         margin-right: 0; }
     .row1 .row1col1 .col-main-pic {
@@ -202,18 +214,17 @@ aside {
       margin-right: 2.35765%;
       width: 65.88078%;
       margin-right: 0;
-      height: 15em;
-      background-color: green; }
+      height: 26.5rem; }
       .row1 .row1col1 .col-main-pic:last-child {
         margin-right: 0; }
   .row1 .row1col2 {
+    background: #f6f6f6;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    margin-right: 0;
-    background-color: orange; }
+    margin-right: 0; }
     .row1 .row1col2:last-child {
       margin-right: 0; }
 
@@ -221,13 +232,13 @@ aside {
   width: 100%;
   height: 47.2%; }
   .row2 .row2col1 {
+    background: #f6f6f6;
     position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    background-color: yellow; }
+    width: 23.23176%; }
     .row2 .row2col1:last-child {
       margin-right: 0; }
     .row2 .row2col1:after {
@@ -238,13 +249,14 @@ aside {
       right: -5.8%;
       border: 0.6px solid #dfdfdf; }
   .row2 .row2col2 {
+    color: white;
     position: relative;
     height: 100%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    background-color: pink; }
+    background-color: #b51800; }
     .row2 .row2col2:last-child {
       margin-right: 0; }
     .row2 .row2col2:after {
@@ -273,14 +285,14 @@ aside {
     .row2 .row2col3 .subrow1 {
       margin-bottom: 3.5%;
       height: 31%;
-      background-color: brown; }
+      background: #f6f6f6; }
     .row2 .row2col3 .subrow2 {
       margin-bottom: 3.5%;
       height: 31%;
-      background-color: grey; }
+      background: #f6f6f6; }
     .row2 .row2col3 .subrow3 {
       height: 31%;
-      background-color: black; }
+      background: #f6f6f6; }
   .row2 .row2col4 {
     height: 100%;
     float: left;
@@ -293,14 +305,14 @@ aside {
     .row2 .row2col4 .subrow1 {
       margin-bottom: 3.5%;
       height: 31%;
-      background-color: brown; }
+      background: #f6f6f6; }
     .row2 .row2col4 .subrow2 {
       margin-bottom: 3.5%;
       height: 31%;
-      background-color: grey; }
+      background: #f6f6f6; }
     .row2 .row2col4 .subrow3 {
       height: 31%;
-      background-color: black; }
+      background: #f6f6f6; }
 
 *,
 *::before,
@@ -373,7 +385,6 @@ h1 {
   width: 90%;
   padding-left: 3%;
   border-top: 1px solid #4bc6df;
-  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto; }
 

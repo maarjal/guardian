@@ -6,6 +6,7 @@
 }
 
 #headlines {
+  margin-top: 1rem;
   height: 70%;
 }
 
@@ -25,9 +26,23 @@ aside {
 }
 
 .section-content {
+  background: white;
   width: 80%;
   height: 100%;
   float: left;
+  & img {
+    width: 100%;
+  }
+  & h3, & p, & h4 {
+    padding-left: 2%;
+    padding-top: 1%;
+  }
+  & h3 {
+    font-size: 2em;
+  }
+  & h4 {
+    font-size: 1.3em;
+  }
 }
 
 .row1 {
@@ -35,28 +50,28 @@ aside {
   width: 100%;
   height: 50%;
   & .row1col1 {
+    color: white;
+    background: $main-news-background;
+    border-top: 1px solid $border-color;
     position: relative;
     height: 100%;
     @include col-gutter(9);
-    background-color: red;
     &:after {
     @include vertical-hr(-1.8%);
     }
     & .col-main-news {
       @include col-gutter(4);
-      height: 15em;
-      background-color: black;
+      height: 26.5rem;
     }
     & .col-main-pic {
       @include col-gutter(8, 0);
-      height: 15em;
-      background-color: green;
+      height: 26.5rem;
     }
   }
   & .row1col2 {
+    background: $news-background;
     height: 100%;
     @include col-gutter(3, 0);
-    background-color: orange;
   }
 }
 
@@ -64,19 +79,20 @@ aside {
   width: 100%;
   height: 47.2%;
   & .row2col1 {
+    background: $news-background;
     position: relative;
     height: 100%;
     @include col-gutter(3);
-    background-color: yellow;
     &:after {
     @include vertical-hr(-5.8%);
     }
   }
   & .row2col2 {
+    color: white;
     position: relative;
     height: 100%;
     @include col-gutter(3);
-    background-color: pink;
+    background-color: $live-news-background;
     &:after {
     @include vertical-hr(-5.8%);
     }
